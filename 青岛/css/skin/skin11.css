@@ -1,0 +1,11 @@
+body {background: #0e0c1f url(../../images/bg7.png) no-repeat center 0;background-size: cover;}
+.search_bt_box li:nth-child(3){
+    background: url(../../images/skin9/select_bg1.png) no-repeat right center;
+}
+.top .right .top_bt .top_bt5 {background-color: rgba(64,122,255,0.25);}
+.wdsc_box {background-color: rgba(0,0,0,0.12);}
+.right_box .calendar_box {background-color: rgba(0,0,0,0.12);border-color: rgba(255,255,255,0.15);}
+.right_box .tztb_box {background-color: rgba(0,0,0,0.12);border-color: rgba(255,255,255,0.15);}
+.main .search_box {border-color: #8490a9;border-color: rgba(255,255,255,0.4);background-color: #546386;background-color: rgba(255,255,255,0.15);}
+.wdsc_box {border-color: rgba(255,255,255,0.15);}
+.wdsc_box .title {border-bottom-color: rgba(255,255,255,0.15);}

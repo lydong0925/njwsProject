@@ -1,0 +1,20 @@
+body {background: #1462ad url(../../images/bg8.png) no-repeat center 0;background-size: 100% 100%;}
+.search_bt_box li:nth-child(3){
+    background: url(../../images/skin9/select_bg1.png) no-repeat right center;
+}
+.wdsc_box {background-color: rgba(0,0,0,0.05);}
+.right_box .calendar_box {background-color: rgba(0,0,0,0.05);}
+.right_box .tztb_box {background-color: rgba(0,0,0,0.05);}
+.wdsc_box {border-color: rgba(255,255,255,0.5);}
+.wdsc_box .title {border-bottom-color: rgba(255,255,255,0.5);}
+.alertPage .lisB1 .box3 .list .row4 .txt_detail {color: #e4edf2;}
+.alertPage .lisB1 .box3 .list .row3 .fr {color: #e4edf2;}
+.alertPage .lisB1 .box3 .list .row2 {color: #e4edf2;}
+.alertPage .lisB1 .box2 .row1 .unit {color: #fff;}
+.alertPage .lisB1 .box2 .list4 .row1 .num {color: #cfeffb;}
+.lisB2 .search_box .inp {border-color: rgba(255,255,255,0.3);background-color: rgba(255,255,255,0.1);}
+.lisB2 .box1 .pageBox .page {border-color: rgba(255,255,255,0.1);}
+.lisB2 .box1 .pageBox .page.current {background: rgba(255,255,255,0.3);}
+
+.alertDetail .box3 .pageBox {box-shadow: inset 0 0 10px rgba(255,255,255,0.4);background: rgba(255,255,255,0.2);}
+.alertDetail .box3 .pageBox .left input {background-color: rgba(255,255,255,0.4);border-color: #fff;color: #555;}

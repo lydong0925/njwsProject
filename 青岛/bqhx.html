@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>青岛市警务信息融合应用系统</title>
+		
+		<link rel="stylesheet" href="resource/bootstrap/bootstrap.min.css"> 
+		
+		<!--滚动条插件css-->
+		<link type="text/css" rel="stylesheet" href="resource/mCustomScrollbar/css/jquery.mCustomScrollbar.css"/>
+		
+		<link href="css/htmleaf-demo.css" rel="stylesheet" />
+		<link href="css/gallery.css" rel="stylesheet" />
+		
+		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/bqhx.css" rel="stylesheet" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo"></div>
+			<div class="nav fr">
+				<a class="home fl" href="javascript:;">首页</a>
+				<a class="user fl" href="javascript:;">管理员</a>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+			
+	<section class="container01">
+		<div class="carusel">
+			
+			
+			<!--contentA 开始-->
+			<div class="contentA content-banner">
+				<div class="bqhx-top01">
+					<div class="top01-tit">标签库存储</div>
+					<div class="top01-det">
+						<div class="echarts01 fl" id="myChartzzt01">
+							
+						</div>
+						<div class="echarts02 fl" id="myChartHxt01">
+							
+						</div>
+						<div class="det-data fr">
+							<div class="data-tit">标签库共存储</div>
+							<div class="data00 data01">
+								<div class="num00 num01">23</div>
+								<div class="word">大类</div>
+							</div>
+							<div class="data00 data02">
+								<div class="num00 num02">95</div>
+								<div class="word">标签</div>
+							</div>
+							<div class="data00 data03">
+								<div class="num00 num03">51</div>
+								<div class="word word01">涉及人员/万</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bqhx-bottom01">
+					<div class="bottom01-tit">近期新关联标签数量变化</div>
+					<div class="echarts03" id="myChartLine01"></div>
+				</div>
+			</div>
+			<!--contentA 结束-->
+			
+			<!--contentB 开始-->
+			<div class="contentB content-banner">
+				<div class="contentB0 ">
+					<div class="data0">
+						<img class="data01" src="images/bqhx/bqgk/data01.png">
+						<img class="data02" src="images/bqhx/bqgk/data02.png">
+						<img class="data03" src="images/bqhx/bqgk/data03.png">
+						<img class="data04" src="images/bqhx/bqgk/data04.png">
+						<img class="data05" src="images/bqhx/bqgk/data05.png">
+						<img class="data06" src="images/bqhx/bqgk/data06.png">
+					</div>
+					<div class="b-round">
+						<img class="b-round01" src="images/bqhx/bqgk/b-round01.png">
+						<img class="b-round02" src="images/bqhx/bqgk/b-round02.png">
+						<img class="b-round03" src="images/bqhx/bqgk/b-round03.png">
+						<img class="b-round04" src="images/bqhx/bqgk/b-round04.png">
+					</div>
+					<div class="people"><img class="img-people" src="images/bqhx/bqgk/people.png"></div>
+					<div class="round02"><img class="img-round02" src="images/bqhx/bqgk/round02.png"></div>
+					<div class="b-list01">
+						<div class="list-tit">社会属性</div>
+						<ul class="list-ul">
+							<li><span class="miaoshu fl">职业情况</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">地域信息</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">工作类型</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">特长技能</span><span class="num fl">26</span></li>
+							<li><span class="miaoshu fl">社会保险</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">住房</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">婚姻情况</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">社会关系</span><span class="num fl">26</span></li>
+							<li><span class="miaoshu fl">现实表现</span><span class="num fl">12</span></li>
+						</ul>
+					</div>
+					<div class="b-list02">
+						<div class="list-tit">自然属性</div>
+						<ul class="list-ul">
+							<li><span class="miaoshu fl">性别</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">年龄</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">健康情况</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">体貌特征</span><span class="num fl">26</span></li>
+						</ul>
+					</div>
+					<div class="b-list03">
+						<div class="list-tit">行为属性</div>
+						<ul class="list-ul">
+							<li><span class="miaoshu fl">行为特征</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">住宿情况</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">上网情况</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">活动地区统计</span><span class="num fl">26</span></li>
+							<li><span class="miaoshu fl">车辆活动</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">高危行为</span><span class="num fl">7</span></li>
+						</ul>
+					</div>
+					<div class="b-list04">
+						<div class="list-tit">关联属性</div>
+						<ul class="list-ul">
+							<li><span class="miaoshu fl">地址类</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">涉警类</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">物品类</span><span class="num fl">7</span></li>
+						</ul>
+					</div>
+					<div class="b-list05">
+						<div class="list-tit">前科属性</div>
+						<ul class="list-ul">
+							<li class="on">
+								<span class="miaoshu fl">七类重点人员</span><span class="num fl">4</span>
+								<div class="li-detail" style="display: block;">
+									<a href="javascript:;">涉恐人员</a>
+									<a href="javascript:;">涉稳人员</a>
+									<a href="javascript:;">在逃人员</a>
+									<a href="javascript:;">涉毒人员</a>
+									<a href="javascript:;">刑事犯罪前科人员</a>
+									<a href="javascript:;">精神病人员</a>
+									<a href="javascript:;">上访人员</a>
+								</div>
+							</li>
+							<li>
+								<span class="miaoshu fl">涉警</span><span class="num fl">7</span>
+								<div class="li-detail">
+									<a href="javascript:;">涉恐人员</a>
+									<a href="javascript:;">涉稳人员</a>
+									<a href="javascript:;">精神病人员</a>
+									<a href="javascript:;">上访人员</a>
+								</div>
+							</li>
+							<li><span class="miaoshu fl">前科特征</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">打击情况</span><span class="num fl">26</span></li>
+							<li><span class="miaoshu fl">刑事处罚</span><span class="num fl">45</span></li>
+						</ul>
+					</div>
+					<div class="b-list02 b-list06">
+						<div class="list-tit">金属属性</div>
+						<ul class="list-ul">
+							<li><span class="miaoshu fl">持有卡属性</span><span class="num fl">4</span></li>
+							<li><span class="miaoshu fl">交易特点</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">资金情况分析</span><span class="num fl">7</span></li>
+							<li><span class="miaoshu fl">交易类型评估</span><span class="num fl">26</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--contentB 结束-->
+			
+			<!--contentC 开始-->
+			<div class="contentC content-banner">
+				<div class="c-tit">标签查询</div>
+				<div class="c-top">
+					<div class="row">
+						<div class="col-lg-4">
+							<label class="col-sm-3 control-label">标签名称</label>
+							<div class="col-sm-9">
+								<input class="form-control" type="text"  value="">
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<label class="col-sm-3 control-label">标签类型</label>
+							<div class="col-sm-9">
+								<select name="" class="form-control">
+									<option value="">--请选择--</option>
+									<option value="">标签类型</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<label class="col-sm-3 control-label">标签属性</label>
+							<div class="col-sm-9">
+								<select name="" class="form-control">
+									<option value="">--请选择--</option>
+									<option value="">标签类型</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<label class="col-sm-3 control-label">标签时限</label>
+							<div class="col-sm-9">
+								<select name="" class="form-control">
+									<option value="">--请选择--</option>
+									<option value="">标签类型</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<label class="col-sm-3 control-label">标签有效性</label>
+							<div class="col-sm-9">
+								<a class="c-top-radio on" href="javascript:;">有效</a>
+								<a class="c-top-radio" href="javascript:;">无效</a>
+							</div>
+						</div>
+					</div>
+					<div class="row row-btn">
+						<button type="button" class="btn btn-defaul">查询</button>
+						<button type="button" class="btn btn-defaul">重置</button>
+					</div>
+				</div>
+				<div class="c-bottom">
+					<div class="bottom-box mscroll">
+						<table class="table table-striped table-hover">
+							<thead>
+								<tr>
+									<th>标签名称</th>
+									<th>标签说明</th>
+									<th>创建时间</th>
+									<th>标签类型</th>
+									<th>标签属性</th>
+									<th>标签时限</th>
+									<th>标签有效性</th>
+									<th>关联数据量</th>
+									<th>操作</th>
+								</tr>																	
+							</thead>
+							<tbody>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">5154</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">1461</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">121</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">451</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">21</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">212</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">323</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">65</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">65</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">65</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+								<tr>
+									<td>标签名</td>
+									<td>说明文字</td>
+									<td>2018/1/10</td>
+									<td>类型</td>
+									<td>属性</td>
+									<td></td>
+									<td>有</td>
+									<td class="num">65</td>
+									<td class="cz">      
+										<a class="cz01" href="javascript:">详情</a><a class="cz02" href="javascript:">修改</a><a class="cz03" href="javascript:">撤销</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--contentC 结束-->
+			
+			<!--contentD 开始-->
+			<div class="contentD content-banner">
+				<div class="c-tit">标签查询</div>
+				<div class="d-tabs">
+					<ul class="tabs-ul">
+						<li>基本属性</li>
+						<li class="on">业务属性</li>
+						<li>规律属性</li>
+					</ul>
+				</div>
+				<div class="d-select-box-out">
+					<div class="d-select-box hide">
+						<div class="d-select-out">
+							<span class="bq fl">已选标签</span>
+							<div class="d-select mscroll07">
+								<ul class="select-ul fl">
+									<li>
+										<span class="biaoqian fl">男</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">70后</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">汉族</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">四川省</span>
+										<span class="d-close fr"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-select-det">
+							<div class="select-det-list01">
+								<div class="name fl">性别</div>
+								<div class="det-list fl">
+									<span>男</span><span>女</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">年龄</div>
+								<div class="det-list fl">
+									<span>50后</span><span>60后</span><span>70后</span><span>80后</span><span>90后</span><span>00后</span><span>其他</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">身高</div>
+								<div class="det-list fl">
+									<span>150以下</span><span>150-155cm</span><span>156-160cm</span><span>166-170cm</span><span>171-175cm</span><span>176-180cm</span><span>181-185cm</span><span>186-190cm</span><span>190以上</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">民族</div>
+								<div class="det-list fl mscroll01">
+									<span>汉</span><span>蒙古族</span><span>回族</span><span>藏族</span><span>维吾尔族</span><span>苗族</span>
+									<span>彝族</span><span>壮族</span><span>布依族</span><span>朝鲜族</span><span>瑶族</span><span>白族</span><span>土家族</span><span>哈尼族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">户籍区划</div>
+								<div class="det-list fl mscroll02">
+									<span>北京市</span><span>天津市</span><span>河北省</span><span>陕西省</span><span>内蒙古自治去</span><span>辽宁省</span><span>吉林省</span>
+									<span>黑龙江省</span><span>上海市</span><span>江苏省</span><span>浙江省</span><span>安徽省</span><span>福建省</span><span>江西省</span><span>山东省</span>
+								</div>
+							</div>
+						</div>
+						<div class="d-bottom mt10">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>姓名</th>
+										<th>身份证号</th>
+										<th>性别</th>
+										<th>民族</th>
+										<th>出生日期</th>
+										<th>户籍地址</th>
+									</tr>																	
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="no-data">没有数据</div>
+						</div>
+					</div>
+					
+					<div class="d-select-box">
+						<div class="d-select-out">
+							<span class="bq fl">已选标签</span>
+							<div class="d-select mscroll08">
+								<ul class="select-ul fl">
+									<li>
+										<span class="biaoqian fl">70后</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">汉族</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">男</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">四川省</span>
+										<span class="d-close fr"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-select-det">
+							<div class="select-det-list01">
+								<div class="name fl">性别</div>
+								<div class="det-list fl">
+									<span>男</span><span>女</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">年龄</div>
+								<div class="det-list fl">
+									<span>50后</span><span>60后</span><span>70后</span><span>80后</span><span>90后</span><span>00后</span><span>其他</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">身高</div>
+								<div class="det-list fl">
+									<span>150以下</span><span>150-155cm</span><span>156-160cm</span><span>166-170cm</span><span>171-175cm</span><span>176-180cm</span><span>181-185cm</span><span>186-190cm</span><span>190以上</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">民族</div>
+								<div class="det-list fl mscroll03">
+									<span>汉</span><span>蒙古族</span><span>回族</span><span>藏族</span><span>维吾尔族</span><span>苗族</span>
+									<span>彝族</span><span>壮族</span><span>布依族</span><span>朝鲜族</span><span>瑶族</span><span>白族</span><span>土家族</span><span>哈尼族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+									<span>彝族</span><span>壮族</span><span>布依族</span><span>朝鲜族</span><span>瑶族</span><span>白族</span><span>土家族</span><span>哈尼族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">户籍区划</div>
+								<div class="det-list fl mscroll04">
+									<span>北京市</span><span>天津市</span><span>河北省</span><span>陕西省</span><span>内蒙古自治去</span><span>辽宁省</span><span>吉林省</span>
+									<span>黑龙江省</span><span>上海市</span><span>江苏省</span><span>浙江省</span><span>安徽省</span><span>福建省</span><span>江西省</span><span>山东省</span>
+								</div>
+							</div>
+						</div>
+						<div class="d-bottom mt10">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>姓名</th>
+										<th>身份证号</th>
+										<th>性别</th>
+										<th>民族</th>
+										<th>出生日期</th>
+										<th>户籍地址</th>
+									</tr>																	
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="no-data">没有数据</div>
+						</div>
+					</div>
+					
+					<div class="d-select-box hide">
+						<div class="d-select-out">
+							<span class="bq fl">已选标签</span>
+							<div class="d-select mscroll09">
+								<ul class="select-ul fl">
+									<li>
+										<span class="biaoqian fl">四川省</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">70后</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">汉族</span>
+										<span class="d-close fr"></span>
+									</li>
+									<li>
+										<span class="biaoqian fl">男</span>
+										<span class="d-close fr"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-select-det">
+							<div class="select-det-list01">
+								<div class="name fl">性别</div>
+								<div class="det-list fl">
+									<span>男</span><span>女</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">年龄</div>
+								<div class="det-list fl">
+									<span>50后</span><span>60后</span><span>70后</span><span>80后</span><span>90后</span><span>00后</span><span>其他</span>
+								</div>
+							</div>
+							<div class="select-det-list01">
+								<div class="name fl">身高</div>
+								<div class="det-list fl">
+									<span>150以下</span><span>150-155cm</span><span>156-160cm</span><span>166-170cm</span><span>171-175cm</span><span>176-180cm</span><span>181-185cm</span><span>186-190cm</span><span>190以上</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">民族</div>
+								<div class="det-list fl mscroll05">
+									<span>汉</span><span>蒙古族</span><span>回族</span><span>藏族</span><span>维吾尔族</span><span>苗族</span>
+									<span>彝族</span><span>壮族</span><span>布依族</span><span>朝鲜族</span><span>瑶族</span><span>白族</span><span>土家族</span><span>哈尼族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+									<span>哈萨克族</span><span>傣族</span><span>黎族</span><span>傈僳族</span><span>佤族</span><span>畲族</span><span>拉祜族</span><span>水族</span>
+								</div>
+							</div>
+							<div class="select-det-list02">
+								<div class="name fl">户籍区划</div>
+								<div class="det-list fl mscroll06">
+									<span>北京市</span><span>天津市</span><span>河北省</span><span>陕西省</span><span>内蒙古自治去</span><span>辽宁省</span><span>吉林省</span>
+									<span>黑龙江省</span><span>上海市</span><span>江苏省</span><span>浙江省</span><span>安徽省</span><span>福建省</span><span>江西省</span><span>山东省</span>
+								</div>
+							</div>
+						</div>
+						<div class="d-bottom mt10">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>姓名</th>
+										<th>身份证号</th>
+										<th>性别</th>
+										<th>民族</th>
+										<th>出生日期</th>
+										<th>户籍地址</th>
+									</tr>																	
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="no-data">没有数据</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!--contentD 结束-->
+			
+		</div>
+				
+		<!--banner 切换开始-->
+		<div class="banner-dot-box">
+			<ul class="dot-box">
+				<li class="button01 on">标签统计</li>
+				<li class="button01">标签概况</li>																										
+				<li class="button01">标签管理</li>
+				<li class="button01">标签检索</li>
+			</ul>
+		</div>
+		<!--banner 切换结束-->
+		<!--<a class="prev" href="javascript:;" stat="prev1001"><img src="images/bqhx/pre-ico.png"></a>
+		<a class="next" href="javascript:;" stat="next1002"><img src="images/bqhx/next-ico.png"></a>-->
+	</section>
+			
+			
+			
+
+			
+		</div>
+
+
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/bqhx.js"></script>
+		
+		<script type="text/javascript" src="js/jQuery.cubeGalleryPlagin.js"></script>
+		
+		<script src="resource/echarts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="resource/echarts/mycharts.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--滚动条插件-->
+		<script src="resource/mCustomScrollbar/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+		<script src="resource/mCustomScrollbar/js/jquery.mCustomScrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//滚动条
+			(function($){
+		        $(window).on("load",function(){
+		            $(".mscroll").mCustomScrollbar({      //默认情况下，脚本应用垂直滚动条
+		                theme:"", //主题颜色  
+		                scrollInertia :0,//滚动延迟  	                
+	//				    axis:"x" ,// 水平滚动条
+					    axis:"y" ,// 垂直滚动条
+	//				    axis:"yx", // vertical and horizontal scrollbar  2轴滚动条
+	//					mouseWheel:{ axis: "y" },
+					});
+		            $(".mscroll01").mCustomScrollbar({  });
+		            $(".mscroll02").mCustomScrollbar({  });
+		            $(".mscroll03").mCustomScrollbar({  });
+		            $(".mscroll04").mCustomScrollbar({  });
+		            $(".mscroll05").mCustomScrollbar({  });
+		            $(".mscroll06").mCustomScrollbar({  });
+		            $(".mscroll07").mCustomScrollbar({  });
+		            $(".mscroll08").mCustomScrollbar({  });
+		            $(".mscroll09").mCustomScrollbar({  });
+		        });
+		    })(jQuery);
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,12 @@
+body {background: #1462ad url(../../images/bg1.png) no-repeat center 0;background-size: 100% 100%;}
+.search_bt_box li:nth-child(3){
+    background: url(../../images/skin9/select_bg1.png) no-repeat right center;
+}
+.wdsc_box {background-color: rgba(0,0,0,0.05);}
+.right_box .calendar_box {background-color: rgba(0,0,0,0.05);}
+.right_box .tztb_box {background-color: rgba(0,0,0,0.05);}
+.wdsc_box {border-color: rgba(255,255,255,0.5);}
+.wdsc_box .title {border-bottom-color: rgba(255,255,255,0.5);}
+.alertPage .lisB1 .box3 .list .row4 .txt_detail {color: #e4edf2;}
+.alertPage .lisB1 .box3 .list .row3 .fr {color: #e4edf2;}
+.alertPage .lisB1 .box3 .list .row2 {color: #e4edf2;}

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/bxsslider.css"/>
+<link rel="stylesheet" type="text/css" href="css/zyksh.css"/>
+<link rel="stylesheet" type="text/css" href="" class="skincsslittle"/>
+<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="js/layer/layer.js" type="text/javascript"></script>
+<script src="js/bxslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/echarts/js/echarts.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/zyksh.js" type="text/javascript"></script>
+<title></title>
+<style>
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="top">
+		<div class="logo"></div>
+		<div class="right">
+			<div class="time nowTime"></div>
+			<ul class="top_bt">
+				<li class="top_bt1"><i>1</i></li>
+				<li class="top_bt2"></li>
+				<li class="top_bt3" id="theme_bt"></li>
+				<li class="top_bt4"></li>
+				<li class="top_bt5"></li>
+				<li class="top_bt6"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="bottom">青岛市公安局 版权所有</div>
+	<div class="theme_box" id="theme">
+		<div class="close"></div>
+		<ul class="theme">
+			<li class="theme01 active"></li>
+			<li class="theme02"></li>
+			<li class="theme03"></li>
+			<li class="theme04"></li>
+			<li class="theme05"></li>
+			<li class="theme06"></li>
+			<li class="theme07"></li>
+			<li class="theme08"></li>
+			<li class="theme09"></li>
+			<li class="theme10"></li>
+			<li class="theme11"></li>
+			<li class="theme12"></li>
+		</ul>
+	</div>
+	
+	<!--资源可视化-->
+	<div class="alertPage" id="alertPage">
+		<div class="title">资源可视化</div>
+		<div class="alertCon">
+		    <ul id="marquee" class="listUl">
+		    	<li class="listB lisB1">
+	            	<div class="box box1">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">各市应用</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<div class="box box2">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">分类统计</div>
+	            			</div>
+	            		</div>
+	            		<div class="info">应用商店共注册应用<strong>590</strong>个</div>
+	            		<ul class="list_box">
+	            			<li class="list list1">
+	            				<div class="row1"><span class="num">30</span><span class="unit">/个</span></div>
+	            				<div class="row2">检索数据类</div>
+	            			</li>
+	            			<li class="list list2">
+	            				<div class="row1"><span class="num">241</span><span class="unit">/个</span></div>
+	            				<div class="row2">研判分析类</div>
+	            			</li>
+	            			<li class="list list3">
+	            				<div class="row1"><span class="num">291</span><span class="unit">/个</span></div>
+	            				<div class="row2">基础应用类</div>
+	            			</li>
+	            			<li class="list list4">
+	            				<div class="row1"><span class="num">28</span><span class="unit">/个</span></div>
+	            				<div class="row2">警种专业类</div>
+	            			</li>
+	            		</ul>
+	            	</div>
+	            	<div class="box box3">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">最新应用</div>
+	            			</div>
+	            			<span class="more">更多+</span>
+	            		</div>
+	            		<ul class="list_box">
+	            			<li class="list list1">
+	            				<div class="row1">实战勤务指挥平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">开发,拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list2">
+	            				<div class="row1">巡逻盘查核录系统</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list3">
+	            				<div class="row1">情报信息综合应用平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">云平台示范应用云平台示范应用云平台示范应用</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list4">
+	            				<div class="row1">警务管理平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">全国机动车、驾驶人信息全国机动车、驾驶人信息</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list5" style="margin-bottom: 0;">
+	            				<div class="row1">网管综合应用平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">全国机动车、驾驶人信息全国机动车、驾驶人信息</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list6" style="margin-bottom: 0;">
+	            				<div class="row1">部门间信息共享与服务与平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">开发,拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            		</ul>
+	            		
+	            	</div>
+	            </li>
+		    	<li class="listB lisB1">
+	            	<div class="box box1">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">各市应用</div>
+	            			</div>
+	            		</div>
+	            		<div class="fl" id="charts1" style="width: 100%;height:95%;margin: 0 auto;"></div>
+	            	</div>
+	            	<div class="box box2">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">分类统计</div>
+	            			</div>
+	            		</div>
+	            		<div class="info">应用商店共注册应用<strong>590</strong>个</div>
+	            		<ul class="list_box">
+	            			<li class="list list1">
+	            				<div class="row1"><span class="num">30</span><span class="unit">/个</span></div>
+	            				<div class="row2">检索数据类</div>
+	            			</li>
+	            			<li class="list list2">
+	            				<div class="row1"><span class="num">241</span><span class="unit">/个</span></div>
+	            				<div class="row2">研判分析类</div>
+	            			</li>
+	            			<li class="list list3">
+	            				<div class="row1"><span class="num">291</span><span class="unit">/个</span></div>
+	            				<div class="row2">基础应用类</div>
+	            			</li>
+	            			<li class="list list4">
+	            				<div class="row1"><span class="num">28</span><span class="unit">/个</span></div>
+	            				<div class="row2">警种专业类</div>
+	            			</li>
+	            		</ul>
+	            	</div>
+	            	<div class="box box3">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">最新应用</div>
+	            			</div>
+	            			<span class="more">更多+</span>
+	            		</div>
+	            		<ul class="list_box">
+	            			<li class="list list1">
+	            				<div class="row1">实战勤务指挥平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">开发,拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list2">
+	            				<div class="row1">巡逻盘查核录系统</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list3">
+	            				<div class="row1">情报信息综合应用平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">云平台示范应用云平台示范应用云平台示范应用</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list4">
+	            				<div class="row1">警务管理平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">全国机动车、驾驶人信息全国机动车、驾驶人信息</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list5" style="margin-bottom: 0;">
+	            				<div class="row1">网管综合应用平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">全国机动车、驾驶人信息全国机动车、驾驶人信息</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list6" style="margin-bottom: 0;">
+	            				<div class="row1">部门间信息共享与服务与平台</div>
+	            				<div class="row2">
+	            					<span class="xx_b"><span class="xx"></span></span>
+	            					<span class="pf">9.64分</span>
+	            					<span class="useNum">(已使用20146次)</span>
+	            				</div>
+	            				<div class="row3">
+	            					<div class="fl">4573人注册</div>
+	            					<div class="fr">
+	            						<span class="name">单位：</span>
+	            						<span class="unit">公安部</span>
+	            					</div>
+	            				</div>
+	            				<div class="row4">
+	            					<div class="txt_detail">开发,拟将本应用坛拟将本应用坛</div>
+	            					<span class="btn_detail">[详情]</span>
+	            				</div>
+	            			</li>
+	            		</ul>
+	            		
+	            	</div>
+	            </li>
+		    	<li class="listB lisB2">
+	            	<div class="search_box">
+		            	<input type="text" class="inp" placeholder="应用检索"/>
+		            	<span class="searchB">检&nbsp;&nbsp;索</span>
+	            	</div>
+	            	<div class="box box1">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">必备应用</div>
+	            			</div>
+	            			<ul class="pageBox">
+	            				<li class="page first current">1</li>
+	            				<li class="page">2</li>
+	            				<li class="page">3</li>
+	            				<li class="page">4</li>
+	            				<li class="page">5</li>
+	            			</ul>
+	            		</div>
+	            		<div class="boxes">
+	            			<div class="pageConB">
+	            				<ul>
+	            					<li><img src="images/alert/box4_pic1.png"/><p>现场勘验<br />人员照片</p></li>
+	            					<li><img src="images/alert/box4_pic2.png"/><p>现场勘验<br />人员信息</p></li>
+	            					<li><img src="images/alert/box4_pic3.png"/><p>现场勘验<br />指纹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic4.png"/><p>现场勘验<br />足迹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic5.png"/><p>现场勘验<br />DNA痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic6.png"/><p>现场勘验串<br />案人员关联</p></li>
+	            					<li><img src="images/alert/box4_pic7.png"/><p>现场勘验<br />串案依据</p></li>
+	            					<li><img src="images/alert/box4_pic8.png"/><p>现场勘验串<br />案关联案件</p></li>
+	            					<li><img src="images/alert/box4_pic9.png"/><p>现场勘验<br />被害人</p></li>
+	            					<li><img src="images/alert/box4_pic10.png"/><p>现场勘验<br />有毒物质</p></li>
+	            					<li><img src="images/alert/box4_pic11.png"/><p>现场勘验<br />作案痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic12.png"/><p>现场勘验<br />特殊印迹</p></li>
+	            					<li><img src="images/alert/box4_pic13.png"/><p>警情120<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic14.png"/><p>警情119<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic15.png"/><p>警情110<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic16.png"/><p>警情122<br />归档单</p></li>
+	            				</ul>
+	            				<ul>
+	            					<li><img src="images/alert/box4_pic1.png"/><p>现场勘验<br />人员照片</p></li>
+	            					<li><img src="images/alert/box4_pic2.png"/><p>现场勘验<br />人员信息</p></li>
+	            					<li><img src="images/alert/box4_pic3.png"/><p>现场勘验<br />指纹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic4.png"/><p>现场勘验<br />足迹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic5.png"/><p>现场勘验<br />DNA痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic6.png"/><p>现场勘验串<br />案人员关联</p></li>
+	            					<li><img src="images/alert/box4_pic7.png"/><p>现场勘验<br />串案依据</p></li>
+	            					<li><img src="images/alert/box4_pic8.png"/><p>现场勘验串<br />案关联案件</p></li>
+	            					<li><img src="images/alert/box4_pic9.png"/><p>现场勘验<br />被害人</p></li>
+	            					<li><img src="images/alert/box4_pic10.png"/><p>现场勘验<br />有毒物质</p></li>
+	            					<li><img src="images/alert/box4_pic11.png"/><p>现场勘验<br />作案痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic12.png"/><p>现场勘验<br />特殊印迹</p></li>
+	            					<li><img src="images/alert/box4_pic13.png"/><p>警情120<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic14.png"/><p>警情119<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic15.png"/><p>警情110<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic16.png"/><p>警情122<br />归档单</p></li>
+	            				</ul>
+	            				<ul>
+	            					<li><img src="images/alert/box4_pic1.png"/><p>现场勘验<br />人员照片</p></li>
+	            					<li><img src="images/alert/box4_pic2.png"/><p>现场勘验<br />人员信息</p></li>
+	            					<li><img src="images/alert/box4_pic3.png"/><p>现场勘验<br />指纹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic4.png"/><p>现场勘验<br />足迹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic5.png"/><p>现场勘验<br />DNA痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic6.png"/><p>现场勘验串<br />案人员关联</p></li>
+	            					<li><img src="images/alert/box4_pic7.png"/><p>现场勘验<br />串案依据</p></li>
+	            					<li><img src="images/alert/box4_pic8.png"/><p>现场勘验串<br />案关联案件</p></li>
+	            					<li><img src="images/alert/box4_pic9.png"/><p>现场勘验<br />被害人</p></li>
+	            					<li><img src="images/alert/box4_pic10.png"/><p>现场勘验<br />有毒物质</p></li>
+	            					<li><img src="images/alert/box4_pic11.png"/><p>现场勘验<br />作案痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic12.png"/><p>现场勘验<br />特殊印迹</p></li>
+	            					<li><img src="images/alert/box4_pic13.png"/><p>警情120<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic14.png"/><p>警情119<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic15.png"/><p>警情110<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic16.png"/><p>警情122<br />归档单</p></li>
+	            				</ul>
+	            				<ul>
+	            					<li><img src="images/alert/box4_pic1.png"/><p>现场勘验<br />人员照片</p></li>
+	            					<li><img src="images/alert/box4_pic2.png"/><p>现场勘验<br />人员信息</p></li>
+	            					<li><img src="images/alert/box4_pic3.png"/><p>现场勘验<br />指纹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic4.png"/><p>现场勘验<br />足迹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic5.png"/><p>现场勘验<br />DNA痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic6.png"/><p>现场勘验串<br />案人员关联</p></li>
+	            					<li><img src="images/alert/box4_pic7.png"/><p>现场勘验<br />串案依据</p></li>
+	            					<li><img src="images/alert/box4_pic8.png"/><p>现场勘验串<br />案关联案件</p></li>
+	            					<li><img src="images/alert/box4_pic9.png"/><p>现场勘验<br />被害人</p></li>
+	            					<li><img src="images/alert/box4_pic10.png"/><p>现场勘验<br />有毒物质</p></li>
+	            					<li><img src="images/alert/box4_pic11.png"/><p>现场勘验<br />作案痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic12.png"/><p>现场勘验<br />特殊印迹</p></li>
+	            					<li><img src="images/alert/box4_pic13.png"/><p>警情120<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic14.png"/><p>警情119<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic15.png"/><p>警情110<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic16.png"/><p>警情122<br />归档单</p></li>
+	            				</ul>
+	            				<ul>
+	            					<li><img src="images/alert/box4_pic1.png"/><p>现场勘验<br />人员照片</p></li>
+	            					<li><img src="images/alert/box4_pic2.png"/><p>现场勘验<br />人员信息</p></li>
+	            					<li><img src="images/alert/box4_pic3.png"/><p>现场勘验<br />指纹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic4.png"/><p>现场勘验<br />足迹痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic5.png"/><p>现场勘验<br />DNA痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic6.png"/><p>现场勘验串<br />案人员关联</p></li>
+	            					<li><img src="images/alert/box4_pic7.png"/><p>现场勘验<br />串案依据</p></li>
+	            					<li><img src="images/alert/box4_pic8.png"/><p>现场勘验串<br />案关联案件</p></li>
+	            					<li><img src="images/alert/box4_pic9.png"/><p>现场勘验<br />被害人</p></li>
+	            					<li><img src="images/alert/box4_pic10.png"/><p>现场勘验<br />有毒物质</p></li>
+	            					<li><img src="images/alert/box4_pic11.png"/><p>现场勘验<br />作案痕迹</p></li>
+	            					<li><img src="images/alert/box4_pic12.png"/><p>现场勘验<br />特殊印迹</p></li>
+	            					<li><img src="images/alert/box4_pic13.png"/><p>警情120<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic14.png"/><p>警情119<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic15.png"/><p>警情110<br />接警单</p></li>
+	            					<li><img src="images/alert/box4_pic16.png"/><p>警情122<br />归档单</p></li>
+	            				</ul>
+	            			</div>
+	            		</div>
+	            		
+	            	</div>
+	            	<div class="box box2">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">热门专题</div>
+	            			</div>
+	            		</div>
+	            		<ul class="list_box">
+	            			<li class="list list1"><span class="name">必备<br />应用</span></li>
+	            			<li class="list list2"><span class="name">新警入门</span></li>
+	            			<li class="list list3"><span class="name">人员查询</span></li>
+	            			<li class="list list4"><span class="name">异常<br />分析</span></li>
+	            		</ul>
+	            	</div>
+	            	<div class="box box3">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">热门应用</div>
+	            			</div>
+	            		</div>
+	            		<ul class="list_box">
+	            			<li class="list list1">
+	            				<p class="name">警用地理信息基础平台</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list2">
+	            				<p class="name">警务评议系统</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list3">
+	            				<p class="name">人像识别</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list4">
+	            				<p class="name">人员轨迹查询</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list5">
+	            				<p class="name">公安部联查</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            			<li class="list list6">
+	            				<p class="name">青岛人口信息管理</p>
+	            				<div class="row2">
+	            					<span class="xx_B"><span class="xx"></span></span>
+	            					<span class="">152次</span>
+	            				</div>
+	            			</li>
+	            		</ul>
+	            		
+	            	</div>
+	            	<div class="box box4">
+	            		<div class="box_title">
+	            			<div class="name">
+	            				<div class="na">最新发布</div>
+	            			</div>
+	            		</div>
+	            		<div class="table_box">
+		            		<table class="list_box">
+		            			<tr>
+		            				<td class="center" width="50px">1</td>
+		            				<td class="center" width="60px"><img src="images/alert/box7_pic1.png"/></td>
+		            				<td class="sq_B">
+		            					<p class="name">办公平台</p>
+		            					<div class="xx"></div>
+		            				</td>
+		            				<td><div class="btn">申请</div></td>
+		            			</tr>
+		            			<tr>
+		            				<td class="center">2</td>
+		            				<td class="center"><img src="images/alert/box7_pic2.png"/></td>
+		            				<td>智慧搜</td>
+		            				<td>64532人申请</td>
+		            			</tr>
+		            			<tr>
+		            				<td class="center">3</td>
+		            				<td class="center"><img src="images/alert/box7_pic3.png"/></td>
+		            				<td>情报平台</td>
+		            				<td>52085人申请</td>
+		            			</tr>
+		            			<tr>
+		            				<td class="center">4</td>
+		            				<td class="center"><img src="images/alert/box7_pic4.png"/></td>
+		            				<td>综合查询</td>
+		            				<td>28012人申请</td>
+		            			</tr>
+		            			<tr>
+		            				<td class="center">5</td>
+		            				<td class="center"><img src="images/alert/box7_pic5.png"/></td>
+		            				<td>人员大数据</td>
+		            				<td>27621人申请</td>
+		            			</tr>
+		            		</table>
+	            		</div>
+	            		
+	            	</div>
+	            	
+	            </li>
+		    </ul>
+		</div>
+	</div>
+	<!--详情-->
+	<div class="alertDetail">
+		<div class="box box1">
+			<div class="box_top">
+				<div class="left">
+					<img src="images/detail/logo_pic1.png"/>
+					<img src="images/detail/logo_ewm.png"/>
+				</div>
+				<div class="center">
+					<ul class="nav_b">
+						<li class="nav">科信办认证</li>
+						<li class="nav">精品认证</li>
+						<li class="nav">安全认证</li>
+						<li class="nav">数据标准</li>
+						<li class="nav">警务必备</li>
+					</ul>
+					<table class="table">
+						<tr>
+							<td class="name">应用名称：</td>
+							<td colspan="3">江苏公安警务大数据关系分析</td>
+						</tr>
+						<tr>
+							<td class="name">应用简称：</td>
+							<td colspan="3">关系分析</td>
+						</tr>
+						<tr>
+							<td class="name" width="86px">应用类型：</td>
+							<td width="280px">数据分析</td>
+							<td class="name" width="86px">用户评价：</td>
+							<td>
+								<div class="xx_b"><div class="xx"></div></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="name">注册时间：</td>
+							<td>2015-11-13 19:00:19</td>
+							<td class="name">警务要素：</td>
+							<td>人员、警情、案件、地理、图像、单位、通讯、车辆</td>
+						</tr>
+						<tr>
+							<td class="name">上线时间：</td>
+							<td>2015-11-13</td>
+							<td class="name">注册人员：</td>
+							<td>巴业帅</td>
+						</tr>
+						<tr>
+							<td class="name">联 系 人：</td>
+							<td>巴业帅</td>
+							<td class="name">开发厂商：</td>
+							<td>南京维数软件股份限公司</td>
+						</tr>
+						<tr>
+							<td class="name">应用编码：</td>
+							<td>320000220000005</td>
+							<td class="name">用户单位：</td>
+							<td>青岛市公安局</td>
+						</tr>
+					</table>
+				</div>
+				<div class="right">
+					<div class="btn">进入应用</div>
+					<div class="btn">申请权限</div>
+				</div>
+				<div class="box1_U">
+					<ul id="marquee2">
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="box box2">
+			<ul class="list_box">
+				<li class="list">
+					<p class="name">应用功能简介</p>
+					<div class="con">打通人、案、物等之间关系，为您提供可视化、智能化的检索、分析、关系绘制、共享推送等服务。</div>
+				</li>
+				<li class="list">
+					<p class="name">面向用户群体</p>
+					<div class="con">全警</div>
+				</li>
+				<li class="list">
+					<p class="name">角色权限说明</p>
+					<div class="con">暂无角色信息</div>
+				</li>
+			</ul>
+		</div>
+		<div class="box box3">
+			<p class="name">相同类型的应用</p>
+			<ul class="list_box">
+				<li class="list list1">
+					<img src="images/detail/re.png" class="re"/>
+					<p class="name1">驾驶人考试监管</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list2">
+					<p class="name1">智能报表</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list3">
+					<p class="name1">数据质量平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list4">
+					<p class="name1">铁路民航旅客分析</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+			</ul>
+			<p class="name">相同单位的应用</p>
+			<ul class="list_box">
+				<li class="list list5">
+					<img src="images/detail/re.png" class="re"/>
+					<p class="name1">反恐平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list6">
+					<p class="name1">警务基础平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list7">
+					<p class="name1">车辆大数据</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list8">
+					<p class="name1">情报平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+			</ul>
+			<p class="name">用户评论</p>
+			<div class="comment_box">
+				<ul class="info_box">
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+				</ul>
+				<div class="pageBox">
+					<div class="left">
+						<span class="first"></span>
+						<span class="prev"></span>
+						<span class="nums">第 <input type="text" /> 页/共<span>1</span>页</span>
+						<span class="next"></span>
+						<span class="last"></span>
+					</div>
+					<div class="right">
+						共<span class="allNum">4</span>条，显示第<span class="begin">1</span>到第<span class="end">4</span>条
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/bxsslider.css"/>
+<link rel="stylesheet" type="text/css" href="css/zyksh.css"/>
+<link rel="stylesheet" type="text/css" href="css/ring.css"/>
+<link rel="stylesheet" type="text/css" href="" class="skincsslittle"/>
+<script src="js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="js/layer/layer.js" type="text/javascript"></script>
+<script src="js/bxslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/echarts/js/echarts.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/zyksh.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+$(function(){
+	$(".bt").mouseover(function(){
+		$(".bt").css({"animation-play-state":"paused"});
+		$(".bubble").css({"animation-play-state":"paused"});
+	});
+	$(".bt").mouseout(function(){
+		$(".bt").css({"animation-play-state":""});
+		$(".bubble").css({"animation-play-state":""});
+	});
+
+	function body_style(){
+		var w = $(window).width();
+		if(w<1400){
+			$('body').removeClass('w1440');
+			$('body').addClass('w1366');
+		}else if(w<1650){
+			$('body').removeClass('w1366');
+			$('body').addClass('w1440');
+		}else{
+			$('body').removeClass('w1440');
+			$('body').removeClass('w1366');
+		};
+	}
+	body_style();
+	
+	$(window).resize(function(){
+		body_style();
+	})
+	
+	
+});
+	
+</script>
+<title></title>
+</head>
+<body >
+<div class="wrap">
+	<div class="top">
+		<div class="logo"></div>
+		<div class="right">
+			<div class="time nowTime"></div>
+			<ul class="top_bt">
+				<li class="top_bt1"><i>1</i></li>
+				<li class="top_bt2"></li>
+				<li class="top_bt3" id="theme_bt"></li>
+				<li class="top_bt4"></li>
+				<li class="top_bt5"></li>
+				<li class="top_bt6"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="bottom">青岛市公安局 版权所有</div>
+	<div class="theme_box" id="theme">
+		<div class="close"></div>
+		<ul class="theme">
+			<li class="theme01 active"></li>
+			<li class="theme02"></li>
+			<li class="theme03"></li>
+			<li class="theme04"></li>
+			<li class="theme05"></li>
+			<li class="theme06"></li>
+			<li class="theme07"></li>
+			<li class="theme08"></li>
+			<li class="theme09"></li>
+			<li class="theme10"></li>
+			<li class="theme11"></li>
+			<li class="theme12"></li>
+		</ul>
+	</div>
+	
+	<!--资源可视化-->
+	
+	<!--  旋转圆环  -->
+	<div class="ring-tit">
+		
+	</div>
+	<div class="m-ring">
+		
+		<div class="box">
+			<div class="rotate1"> </div>
+			<div class="rotate2"></div>
+			 
+			<ul class="bubble">
+				<li class="bt bt1"><span class="bt_span bt_span1">综合分析</span></li>
+				<li class="bt bt2"><span class="bt_span bt_span2">团伙分析</span></li>
+				<li class="bt bt3"><span class="bt_span bt_span3">旅馆同住</span></li>
+				<li class="bt bt4"><span class="bt_span bt_span4">网吧同上网</span></li>
+				<li class="bt bt5"><span class="bt_span bt_span5">民航同行</span></li>
+				<li class="bt bt6"><span class="bt_span bt_span6">铁路同行</span></li>
+				<li class="bt bt7"><span class="bt_span bt_span7">同案人员</span></li>
+				<li class="bt bt8"><span class="bt_span bt_span8">关系规则</span></li>
+			</ul>
+		</div>
+		
+		<div class="witer">
+			<div class="wit wit1"></div>
+			<div class="wit wit2"></div>
+			<div class="wit wit3"></div>
+			<div class="wit wit4"></div>
+			<div class="wit wit5"></div>
+		</div>
+		
+		
+	</div>
+	<!-- 旋转圆环 -->
+	
+	  
+	<!--详情-->
+	<div class="alertDetail">
+		<div class="box box1">
+			<div class="box_top">
+				<div class="left">
+					<img src="images/detail/logo_pic1.png"/>
+					<img src="images/detail/logo_ewm.png"/>
+				</div>
+				<div class="center">
+					<ul class="nav_b">
+						<li class="nav">科信办认证</li>
+						<li class="nav">精品认证</li>
+						<li class="nav">安全认证</li>
+						<li class="nav">数据标准</li>
+						<li class="nav">警务必备</li>
+					</ul>
+					<table class="table">
+						<tr>
+							<td class="name">应用名称：</td>
+							<td colspan="3">江苏公安警务大数据关系分析</td>
+						</tr>
+						<tr>
+							<td class="name">应用简称：</td>
+							<td colspan="3">关系分析</td>
+						</tr>
+						<tr>
+							<td class="name" width="86px">应用类型：</td>
+							<td width="280px">数据分析</td>
+							<td class="name" width="86px">用户评价：</td>
+							<td>
+								<div class="xx_b"><div class="xx"></div></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="name">注册时间：</td>
+							<td>2015-11-13 19:00:19</td>
+							<td class="name">警务要素：</td>
+							<td>人员、警情、案件、地理、图像、单位、通讯、车辆</td>
+						</tr>
+						<tr>
+							<td class="name">上线时间：</td>
+							<td>2015-11-13</td>
+							<td class="name">注册人员：</td>
+							<td>巴业帅</td>
+						</tr>
+						<tr>
+							<td class="name">联 系 人：</td>
+							<td>巴业帅</td>
+							<td class="name">开发厂商：</td>
+							<td>南京维数软件股份限公司</td>
+						</tr>
+						<tr>
+							<td class="name">应用编码：</td>
+							<td>320000220000005</td>
+							<td class="name">用户单位：</td>
+							<td>青岛市公安局</td>
+						</tr>
+					</table>
+				</div>
+				<div class="right">
+					<div class="btn">进入应用</div>
+					<div class="btn">申请权限</div>
+				</div>
+				<div class="box1_U">
+					<ul id="marquee2">
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+						<li class="slide">
+							<img src="images/detail/pic1.png"/>
+							<img src="images/detail/pic2.png"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="box box2">
+			<ul class="list_box">
+				<li class="list">
+					<p class="name">应用功能简介</p>
+					<div class="con">打通人、案、物等之间关系，为您提供可视化、智能化的检索、分析、关系绘制、共享推送等服务。</div>
+				</li>
+				<li class="list">
+					<p class="name">面向用户群体</p>
+					<div class="con">全警</div>
+				</li>
+				<li class="list">
+					<p class="name">角色权限说明</p>
+					<div class="con">暂无角色信息</div>
+				</li>
+			</ul>
+		</div>
+		<div class="box box3">
+			<p class="name">相同类型的应用</p>
+			<ul class="list_box">
+				<li class="list list1">
+					<img src="images/detail/re.png" class="re"/>
+					<p class="name1">驾驶人考试监管</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list2">
+					<p class="name1">智能报表</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list3">
+					<p class="name1">数据质量平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list4">
+					<p class="name1">铁路民航旅客分析</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+			</ul>
+			<p class="name">相同单位的应用</p>
+			<ul class="list_box">
+				<li class="list list5">
+					<img src="images/detail/re.png" class="re"/>
+					<p class="name1">反恐平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list6">
+					<p class="name1">警务基础平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list7">
+					<p class="name1">车辆大数据</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+				<li class="list list8">
+					<p class="name1">情报平台</p>
+					<div class="xx_b"><div class="xx"></div></div>
+				</li>
+			</ul>
+			<p class="name">用户评论</p>
+			<div class="comment_box">
+				<ul class="info_box">
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+					<li class="info">
+						<div class="row1">
+							<div class="name_p">张默默</div>
+							<div class="address">青岛市公安局</div>
+							<div class="price"><div class="xx_b"><div class="xx"></div></div></div>
+							<div class="pj">好评</div>
+							<div class="time">2017-10-22 09:40:30</div>
+						</div>
+						<div class="comment">驾驶人考试监管</div>
+					</li>
+				</ul>
+				<div class="pageBox">
+					<div class="left">
+						<span class="first"></span>
+						<span class="prev"></span>
+						<span class="nums">第 <input type="text" /> 页/共<span>1</span>页</span>
+						<span class="next"></span>
+						<span class="last"></span>
+					</div>
+					<div class="right">
+						共<span class="allNum">4</span>条，显示第<span class="begin">1</span>到第<span class="end">4</span>条
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

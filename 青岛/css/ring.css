@@ -1,0 +1,84 @@
+﻿body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,textarea,th,td,select,input{
+	margin:0;padding:0;
+	font-family: "Microsoft Yahei", "宋体", tahoma, Srial, helvetica, sans-serif;
+	font-size: 14px;
+	}
+i{font-style: normal;}
+strong,b{font-weight:normal;}
+li{list-style: none;vertical-align: top;}
+a{text-decoration: none;}
+img{border:none;vertical-align: top;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize: none;overflow: auto;}
+
+.clear{zoom: 1;}
+.clear:after{content:"";display: block;clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+
+/*关系人样式*/
+
+.ring-tit{
+	height: 60px;
+	margin-top: 15px;
+	background: url(../images/ring/title.png) no-repeat center;
+}
+.bt_box1_in a small{display:block;width:120px;height:80px;transition:all .3s;-moz-transition:all .3s;-webkit-transition:all .3s;-o-transition:all .3s}
+.bt_box1_in a small:hover{transform:rotate(10deg);-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);transform:scale(1.3,1.3);-webkit-transform:scale(1.3,1.3);-moz-transform:scale(1.3,1.3);-o-transform:scale(1.3,1.3)}
+
+@-webkit-keyframes circular1{0%{transform:rotate(0);-webkit-transform:rotate(0);-moz-transform:rotate(0)}
+25%{transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg)}
+50%{transform:rotate(-180deg);-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg)}
+75%{transform:rotate(-270deg);-webkit-transform:rotate(-270deg);-moz-transform:rotate(-270deg)}
+100%{transform:rotate(-360deg);-webkit-transform:rotate(-360deg);-moz-transform:rotate(-360deg)}
+}
+@-webkit-keyframes circular2{0%{transform:rotate(0);-webkit-transform:rotate(0);-moz-transform:rotate(0)}
+25%{transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+50%{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg)}
+75%{transform:rotate(270deg);-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg)}
+100%{transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg)}
+}
+.rotate1{position:absolute;top:-39px;left:50%;margin-left:-240px;width:480px;height:480px;background:url(../images/ring/rotate1s.png) no-repeat center;-webkit-animation:circular1;-webkit-animation-duration:24s;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-iteration-count:infinite}
+.rotate2{position:absolute;top:-39px;left:50%;margin-left:-240px;width:480px;height:480px;background:url(../images/ring/rotate2s.png) no-repeat center;-webkit-animation:circular2;-webkit-animation-duration:24s;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-iteration-count:infinite}
+.title{padding-top:30px}
+.box{position:fixed;width:100px;height:100px;left:50%;margin-left:-50px;top:270px;z-index:10}
+.light{position:absolute;top:-310px;left:-310px;width:720px;height:720px}
+.bubble{position:absolute;left:50%;top:-100px;margin-left:-305px;width:610px;height:610px;-webkit-animation:circular2;-webkit-animation-duration:24s;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-iteration-count:infinite}
+.bt{position:absolute;width:120px;height:120px;-webkit-animation:circular1;-webkit-animation-duration:24s;-webkit-animation-timing-function:linear;-webkit-animation-delay:0s;-webkit-animation-iteration-count:infinite}
+.bt_span{display:block;background-repeat:no-repeat;background-position:0 0;width:100%;text-align:center;height:100%;line-height:35px;color:#fff;cursor:pointer;font:18.5px/180px "microsoft yahei";-webkit-transition:all .3s}
+.bt_span:hover{transform:scale(1.2,1.2);-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2);-o-transform:scale(1.2,1.2)}
+.bt1{top:16px;left:140px}
+.bt2{top:16px;right:140px}
+.bt3{top:140px;right:0}
+.bt4{bottom:160px;right:0}
+.bt5{bottom:16px;right:144px}
+.bt6{bottom:16px;left:143px}
+.bt7{bottom:142px;left:0}
+.bt8{top:158px;left:0}
+.bt_span1{background-image:url(../images/ring/bt1.png)}
+.bt_span2{background-image:url(../images/ring/bt2.png)}
+.bt_span3{background-image:url(../images/ring/bt3.png)}
+.bt_span4{background-image:url(../images/ring/bt4.png)}
+.bt_span5{background-image:url(../images/ring/bt5.png)}
+.bt_span6{background-image:url(../images/ring/bt6.png)}
+.bt_span7{background-image:url(../images/ring/bt7.png)}
+.bt_span8{background-image:url(../images/ring/bt8.png)}
+.witer{opacity:.2;position:fixed;width:1100px;height:260px;left:50%;margin-left:-550px;bottom:-25px}
+.witer .wit{position:absolute;width:100%;height:100%;left:0;top:0;opacity:0;opacity:1\9\0}
+@-webkit-keyframes wit{0%{-webkit-transform:scale(.2);opacity:1}
+100%{-webkit-transform:scale(1.2);opacity:0}
+}
+.witer .wit1{background:url(../images/ring/water1.png) no-repeat center;-webkit-animation:wit 6s linear infinite forwards}
+.witer .wit2{background:url(../images/ring/water2.png) no-repeat center;-webkit-animation:wit 6s linear .3s infinite forwards}
+.witer .wit3{background:url(../images/ring/water3.png) no-repeat center;-webkit-animation:wit 6s linear .6s infinite forwards}
+.witer .wit4{background:url(../images/ring/water4.png) no-repeat center;-webkit-animation:wit 6s linear .9s infinite forwards}
+.witer .wit5{background:url(../images/ring/water5.png) no-repeat center;-webkit-animation:wit 6s linear 1.2s infinite forwards}
+.witer .wit6{background:url(../images/ring/water6.png) no-repeat center;-webkit-animation:wit 6s linear .6s infinite forwards}
+.w1440 .box{transform:scale(.8) translateY(-65px)}
+.w1440 .title{transform:scale(.7) translateY(-35px)}
+.w1440 .witer .wit{bottom:-75px}
+.w1366 .box{transform:scale(.7) translateY(-83px)}
+.w1366 .title{transform:scale(.7) translateY(-35px)}
+.w1366 .witer .wit{bottom:-75px}
+/*关系人样式*/

@@ -1,0 +1,55 @@
+.content {background-color: #ecf5fa;bottom: auto;}
+.content {position: absolute;top: 10px;left: 10px;right: 10px;width: auto;}
+.content .title {height: 38px;background-image: url(../images/result/titlebg2.png);color: #fff;}
+.content .title .title-right {margin-top: 7px;}
+.content .title .title-name {width: 155px;height: 35px;line-height: 34px;font-size:16px;text-align: center;margin-left: 20px;background: url(../images/result/ryjbxx_bg.png) no-repeat center 0;}
+.content .title .btns {float: left;height: 25px;box-sizing: border-box;border-radius: 5px;cursor: pointer;margin-right: 12px;}
+.content .title .btns-dc {
+	background: -moz-linear-gradient(top, #1ad2d0 0%, #0785fa 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1ad2d0), color-stop(100%, #0785fa));
+	background: -webkit-linear-gradient(top, #1ad2d0 0%, #0785fa 100%);
+	background: -o-linear-gradient(top, #1ad2d0 0%,  #0785fa 100%);
+	background: -ms-linear-gradient(top, #1ad2d0 0%, #0785fa 100%);
+	background: linear-gradient(to bottom, #1ad2d0 0%, #0785fa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad2d0', endColorstr='#0785fa', GradientType=0);
+}
+.content .title .btns-dc div {width: 100%;height: 100%;padding: 0 11px 0 34px;line-height: 24px;box-sizing: border-box;background: url(../images/result/icon-dc2.png) no-repeat 11px 3px;}
+.content .title .btns-gj {border-radius: 5px;border: 1px solid #0193de;background: #ebf3ff url(../images/result/icon-sjzgj.png) no-repeat 11px 4px;padding: 0 11px 0 32px;color: #2476b2;line-height: 24px;}
+.content .title .btns-more {border-radius:0;text-align:center;line-height:26px;margin:-1px 15px;width: 100px;height: 27px;background: url(../images/result/btn-gdtj.png) no-repeat center 0;}
+
+.box1 .table {width: 1044px;height: 336px;margin: 10px auto;border-collapse: collapse;}
+.box1 .table td {box-sizing: border-box;padding-left: 20px;color: #787878;border: 1px solid #eaeff2;background: #ffffff;}
+.box1 .table .name {text-align: center;width: 138px;background:#f6fafd;color: #3484848;padding-left: 0;}
+.box1 .table .picBox {text-align: center;padding: 0;vertical-align: top;}
+.box1 .table .picBox .pic {width: 155px;height: 212px;}
+.box1 .table .color1 {color: #ff3912;}
+.box1 .table .color2 {color: #16a36c;}
+.box2 {background: #fff;}
+.content .box2 .title {
+	background: #bce3f8;box-shadow: inset 0 0 10px #fff;border-bottom: 1px solid #bed9ee;
+}
+.box2 .title-left {margin-left: 20px;margin-top: 5px;}
+.box2 .nav {
+	padding: 0 20px;height: 30px;line-height: 28px;border: 1px solid #95daff;border-radius: 5px;box-shadow: 0 0 15px rgba(40,102,190,0.42);float: left;margin-right: 10px;box-sizing: border-box;cursor: pointer;color: #3b92f0;
+	background: -moz-linear-gradient(top, #ddedfa 0%, #eef2f5 15%, #508cc0 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ddedfa), color-stop(15%, #eef2f5), color-stop(100%, #b5dcfc));
+	background: -webkit-linear-gradient(top, #ddedfa 0%, #eef2f5 15%, #b5dcfc 100%);
+	background: -o-linear-gradient(top, #ddedfa 0%, #eef2f5 15%, #b5dcfc 100%);
+	background: -ms-linear-gradient(top, #ddedfa 0%, #eef2f5 15%, #b5dcfc 100%);
+	background: linear-gradient(to bottom, #ddedfa 0%, #eef2f5 15%, #b5dcfc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddedfa', endColorstr='#b5dcfc', GradientType=0);
+}
+.box2 .nav.current {
+	color: #fff;border: none;line-height: 30px;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fbce66), color-stop(100%, #ffa720));
+	background: -webkit-linear-gradient(top, #fbce66 0%, #ffa720 100%);
+	background: -o-linear-gradient(top, #fbce66 0%,  #ffa720 100%);
+	background: -ms-linear-gradient(top, #fbce66 0%, #ffa720 100%);
+	background: linear-gradient(to bottom, #fbce66 0%, #ffa720 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbce66', endColorstr='#ffa720', GradientType=0);
+}
+.box2 .list-box {margin: 0 12px;margin-top: 8px;}
+.box2 .list {height: 30px;line-height: 30px;border-bottom: 1px dashed #cccccc;color: #787878;}
+.box2 .list span {margin: 0 3px;}
+
+.pageBox {height: 45px;}
